@@ -1,0 +1,4 @@
+#!/bin/bash
+xrandr --newmode 1280x1024 $(cvt 1280 1024 60 | grep -oP '(?<=Modeline "1280x1024_60.00").*')
+xrandr --addmode VGA-1 1280x1024
+xrandr --output VGA-1 --mode 1280x1024 
